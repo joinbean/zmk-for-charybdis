@@ -3,7 +3,6 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/mouse.h>
 
-
 &lt {
     tapping-term-ms = <200>;
     flavor = "balanced";
@@ -25,12 +24,12 @@
         compatible = "zmk,keymap";
 
         Base {
-            bindings = <
+            bindings = 
 &kp ESC         &kp N1   &kp N2  &kp N3            &kp N4          &kp N5            &kp N6          &kp N7           &kp N8     &kp N9   &kp N0       &tog 3
 &kp TAB         &kp Q    &kp W   &kp E             &kp R           &kp T             &kp Z           &kp U            &kp I      &kp O    &kp P        &kp SEMICOLON
 &kp CAPS        &kp A    &kp S   &kp D             &kp F           &kp G             &kp H           &kp J            &kp K      &kp L    &kp SEMI     &kp APOS
 &kp LEFT_SHIFT  &kp Y    &kp X   &kp C             &kp V           &kp B             &kp N           &kp M            &kp COMMA  &kp DOT  &kp SLASH    &tog 1
-                                 &kp LEFT_CONTROL  &kp LEFT_WIN    &kp LEFT_ALT    &lt ENTER       &kp SPACE
+                                 &kp LEFT_CONTROL  &kp LEFT_WIN    &kp LEFT_ALT     &tog 2          &kp SPACE
                                                    &kp LC(RALT)    &kp RIGHT_CONTROL &kp BSPC
             >;
 
@@ -38,62 +37,62 @@
         };
 
         layer_1 {
-            bindings = <
-&kp TILDE         &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE
+            bindings = 
+&kp TILDE         &kp EXCLAMATION  &kp HASH      &kp DOLLAR    &kp DOLLAR    &kp PERCENT    &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &tog 3
 &kp GRAVE         &kp NUMBER_1     &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp LBKT       &kp RBKT   &kp F1         &kp F2        &kp F3                &kp F4                 &kp DEL
 &kp LEFT_CONTROL  &kp NUMBER_5     &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &none          &kp BSLH   &kp F5         &kp F6        &kp F7                &kp F8                 &kp PAGE_UP
-&kp LSHFT         &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &none          &trans     &kp F9         &kp F10       &kp F11               &kp F12                &kp PAGE_DOWN
-                                                 &kp LEFT_WIN  &kp SPACE     &trans         &kp ENTER  &kp BACKSPACE
-                                                               &none         &none          &trans
+&kp LSHFT         &kp NUMBER_9     &kp NUMBER_0  &kp MINUS     &kp EQUAL     &none          &trans     &kp F9         &kp F10       &kp F11               &kp F12                &tog 0
+                                                 &kp LEFT_WIN  &kp SPACE     &trans         &tog 2     &kp BACKSPACE
+                                                               &trans        &trans         &trans
             >;
         };
 
         layer_2 {
-            bindings = <
-&kp F12           &kp F1      &kp F2      &kp F3         &kp F4         &kp F5          &kp F6        &kp F7         &kp F8    &kp F9     &kp F10  &kp F11
-&kp LS(GRAVE)     &kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)     &kp LS(LBKT)    &kp LS(RBKT)  &none          &trans    &none      &none    &trans
-&kp LEFT_CONTROL  &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &kp LS(N8)     &none           &kp LS(BSLH)  &trans         &kp UP    &trans     &trans   &trans
-&kp LEFT_SHIFT    &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)  &kp LS(EQUAL)  &none           &none         &kp LEFT       &kp DOWN  &kp RIGHT  &none    &trans
-                                          &kp LEFT_ALT   &kp SPACE      &kp ENTER       &trans        &kp BACKSPACE
-                                                         &trans         &trans          &none
+            bindings = 
+&kp F12           &kp F1      &kp F2      &kp F3         &kp F4         &kp F5          &kp F6        &kp F7         &kp F8    &kp F9     &kp F10      &tog 3
+&kp LS(GRAVE)     &kp LS(N1)  &kp LS(N2)  &kp LS(N3)     &kp LS(N4)     &kp LS(LBKT)    &kp LS(RBKT)  &none          &trans    &none      &none        &trans
+&kp LEFT_CONTROL  &kp LS(N5)  &kp LS(N6)  &kp LS(N7)     &kp LS(N8)     &none           &kp LS(BSLH)  &trans         &kp UP    &trans     &trans       &trans
+&kp LEFT_SHIFT    &kp LS(N9)  &kp LS(N0)  &kp LS(MINUS)  &kp LS(EQUAL)  &none           &none         &kp LEFT       &kp DOWN  &kp RIGHT  &none        &tog 0
+                                          &kp LEFT_ALT   &kp SPACE      &kp ENTER       &tog 1        &kp BACKSPACE
+                                                         &trans         &trans          &trans
             >;
         };
 
         Mouse {
-            bindings = <
-&none        &none         &none         &none         &none      &none         &none       &none      &none         &none         &none         &tog 3
+            bindings = 
+&none        &none         &none         &none         &none      &none         &none       &none      &none         &none         &none         &tog 0
 &none        &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &none      &bt BT_CLR    &bt BT_CLR  &none      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &none
 &none        &trans        &trans        &mkp MCLK     &trans     &none         &none       &trans     &mkp MCLK     &trans        &trans        &none
-&bootloader  &trans        &mkp RCLK     &mo 4         &mkp LCLK  &mo 5         &mo 5       &mkp LCLK  &mo 4         &mkp RCLK     &trans        &tog 1
-                                         &mo 5         &mkp LCLK  &mkp RCLK     &mkp RCLK   &mkp LCLK
-                                                       &none      &trans        &trans
+&bootloader  &trans        &mkp RCLK     &tog 4        &mkp LCLK  &tog 5        &tog 5      &mkp LCLK  &tog 4        &mkp RCLK     &trans        &tog 1
+                                         &tog 5        &mkp LCLK  &mkp RCLK     &mkp RCLK   &mkp LCLK
+                                                       &trans     &trans        &trans
             >;
         };
 
         layer_4 {
-            bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+            bindings = 
+&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &tog 0
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans     &mkp MCLK  &trans     &trans       &trans     &trans     &mkp MCLK  &trans     &trans  &trans
-&trans  &trans  &mkp RCLK  &trans     &mkp LCLK  &trans       &trans     &mkp LCLK  &trans     &mkp RCLK  &trans  &trans
+&trans  &trans  &mkp RCLK  &tog 3     &mkp LCLK  &trans       &trans     &mkp LCLK  &tog 3     &mkp RCLK  &trans  &tog 1
                            &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
                                       &trans     &trans       &trans
             >;
 
-            trackball-bindings = <&tsl>;//滚轮层
+            trackball-bindings = <&tsl>;  // Scroll wheel layer
         };
 
         layer_5 {
-            bindings = <
-&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
+            bindings = 
+&trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &tog 0
 &trans  &trans  &trans     &trans     &trans     &trans       &trans     &trans     &trans     &trans     &trans  &trans
 &trans  &trans  &trans     &mkp MCLK  &trans     &trans       &trans     &trans     &mkp MCLK  &trans     &trans  &trans
-&trans  &trans  &mkp RCLK  &trans     &mkp LCLK  &trans       &trans     &mkp LCLK  &trans     &mkp RCLK  &trans  &trans
+&trans  &trans  &mkp RCLK  &tog 3     &mkp LCLK  &trans       &trans     &mkp LCLK  &tog 3     &mkp RCLK  &trans  &tog 1
                            &trans     &mkp LCLK  &mkp RCLK    &mkp RCLK  &mkp LCLK
                                       &trans     &trans       &trans
             >;
 
-            trackball-bindings = <&tmv_fine>;//精准指针层
+            trackball-bindings = <&tmv_fine>;  // Fine pointer control layer
         };
     };
 };
