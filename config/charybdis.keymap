@@ -26,12 +26,12 @@
 
         Base {
             bindings = <
-&kp ESC         &kp N1   &kp N2  &kp N3            &kp N4                           &kp N5            &kp N6          &kp N7           &kp N8     &kp N9   &kp N0       &tog 3
-&kp TAB         &kp Q    &kp W   &kp E             &kp R                            &kp T             &kp Z           &kp U            &kp I      &kp O    &kp P        &kp SEMICOLON
-&kp CAPS        &kp A    &kp S   &kp D             &kp F                            &kp G             &kp H           &kp J            &kp K      &kp L    &kp SEMI     &kp APOS
-&kp LEFT_SHIFT  &kp Y    &kp X   &kp C             &kp V                            &kp B             &kp N           &kp M            &kp COMMA  &kp DOT  &kp SLASH    &tog 1
-                                 &kp LEFT_CONTROL  &kp LEFT_WIN                     &kp LEFT_ALT    &lt ENTER       &kp SPACE
-                                                   &kp RIGHT_ALT + RIGHT_CONTROL    &kp RIGHT_CONTROL &kp BSPC
+&kp ESC         &kp N1   &kp N2  &kp N3            &kp N4          &kp N5            &kp N6          &kp N7           &kp N8     &kp N9   &kp N0       &tog 3
+&kp TAB         &kp Q    &kp W   &kp E             &kp R           &kp T             &kp Z           &kp U            &kp I      &kp O    &kp P        &kp SEMICOLON
+&kp CAPS        &kp A    &kp S   &kp D             &kp F           &kp G             &kp H           &kp J            &kp K      &kp L    &kp SEMI     &kp APOS
+&kp LEFT_SHIFT  &kp Y    &kp X   &kp C             &kp V           &kp B             &kp N           &kp M            &kp COMMA  &kp DOT  &kp SLASH    &tog 1
+                                 &kp LEFT_CONTROL  &kp LEFT_WIN    &kp LEFT_ALT    &lt ENTER       &kp SPACE
+                                                   &kp LC(RALT)    &kp RIGHT_CONTROL &kp BSPC
             >;
 
             trackball-bindings = <&tmv_coarse>;
