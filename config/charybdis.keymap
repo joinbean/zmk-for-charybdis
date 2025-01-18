@@ -75,7 +75,7 @@
 &none   &none   &mkp MB1   &mkp MB3   &mkp MB2   &none       &none       &kp LEFT    &kp DOWN    &kp RIGHT   &none   &none
 &none   &none   &none       &none       &none       &none       &none       &none       &none       &none       &none   &none
                             &trans      &trans      &trans      &kp PG_UP   &kp END
-                                        &mkp MB1    &mkp MB2    &kp PG_DOWN
+                                        &mkp MBUTTON_BACK    &mkp MBUTTON_FORWARD    &kp PG_DOWN
             >;
         };
     };
