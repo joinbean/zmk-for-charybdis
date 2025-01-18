@@ -34,6 +34,7 @@
 
         bspc_del: bspc_del {
             compatible = "zmk,behavior-mod-morph";
+            label = "BSPC_DEL";
             #binding-cells = <0>;
             bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LCTL)>;
