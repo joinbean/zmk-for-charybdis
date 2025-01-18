@@ -23,16 +23,12 @@
     behaviors {
         shift_caps_tapdance: shift_caps_tapdance {
             compatible = "zmk,behavior-tap-dance";
+            label = "SHIFT_CAPS_TAPDANCE";  /* <-- REQUIRED property */
             #binding-cells = <0>;
-            /* Time window for counting taps (in ms) */
+
             tapping-term-ms = <200>;
-            
-            /* 
-             * The bindings array:
-             *   - Index 0 => single-tap
-             *   - Index 1 => double-tap
-             * Add more bindings if you want triple-tap or beyond.
-             */
+
+            /* Single tap => LSHIFT, Double tap => CapsLock */
             bindings = <&kp LSHIFT>, <&kp CAPS>;
         };
     };
