@@ -78,38 +78,5 @@
                                                        &none      &trans        &trans
             >;
         };
-
-test_layer_1 {
-            bindings = < 
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-                        &none   &none   &none   &none   &none
-                                &none   &none   &none
-            >;
-        };
-
-        test_layer_2 {
-            bindings = < 
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-                        &none   &none   &none   &none   &none
-                                &none   &none   &none
-            >;
-        };
-
-        test_layer_3 {
-            bindings = < 
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-&none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none   &none
-                        &none   &none   &none   &none   &none
-                                &none   &none   &none
-            >;
-        };
     };
 };
